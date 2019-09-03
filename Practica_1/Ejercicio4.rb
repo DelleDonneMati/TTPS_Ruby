@@ -22,9 +22,7 @@ def  en_palabras()
 	when 45...55
 		puts "#{a} menos cuarto"
 	when 56...59
-		puts "#{a} casi las"
-	else
-		puts "HOLA"		
+		puts "#{a} casi las"		
 	end
 end
 
