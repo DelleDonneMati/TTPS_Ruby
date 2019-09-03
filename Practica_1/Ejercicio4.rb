@@ -20,9 +20,11 @@ def  en_palabras()
 		a = t.hour + 1
 		puts "#{a} menos veinticinco "
 	when 45...55
+		a = t.hour + 1
 		puts "#{a} menos cuarto"
-	when 56...59
-		puts "#{a} casi las"		
+	when 56..59
+		a = t.hour + 1
+		puts "casi las #{a}"		
 	end
 end
 
