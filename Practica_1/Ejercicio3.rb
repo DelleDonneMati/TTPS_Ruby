@@ -5,6 +5,9 @@
 # reemplazar("3.times	{	|i|	puts	i	}")
 #	=>	"3.times	do\n	|i|	puts	i	\nend"
 
-
-
-
+def reemplazar(unString)
+	puts unString.gsub(/[{}]/, '{' => "do\n", '}' => "\nend") 
+end
+	puts "Ingrese un String con { y/o }"
+	a = gets.chomp
+	reemplazar(a)
