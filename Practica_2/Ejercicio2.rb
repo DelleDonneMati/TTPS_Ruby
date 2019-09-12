@@ -4,10 +4,9 @@
 # => [0, 1, 2, 4, 5, 6, 9, 10]
 
 
-def ordenar array
-	p array.sort
+def ordenar (*args)
+	p args.sort
 end
 
-array = [1, 4, 6, 2, 3, 5, 0, 10, 9]
 
-ordenar array
+ordenar(1, 4, 6, 2, 3, 5, 0, 10, 9)
