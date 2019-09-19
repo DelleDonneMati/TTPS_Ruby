@@ -14,4 +14,6 @@ end
 p da_nil? {}
 
 
-p da_nil? {'Hola'}
+da_nil? do 
+	'Algo distinto de nil'
+	 end
