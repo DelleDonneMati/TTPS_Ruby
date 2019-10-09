@@ -19,22 +19,22 @@ module Mixin_Countable
 	end
 
 	def add_invocations(sym)
-		invocations << sym
+		@invocations_list << sym
 	end
 
 	def invoked?(sym)
-		@invocations[sym]>0
+		@invocations_list[sym]>0
 	end
 
 	def invoked(sym) 
-		@invocations[sym]
+		@invocations_list[sym]
 	end
 
 end
 
 # Ejemplo de uso de Countable
 class Greeter
-	include Mixin_Countable
+	extend Mixin_Countable
 	def hi
 		puts 'Hey!'
 	end
@@ -48,13 +48,17 @@ end
 
 a = Greeter.new
 b = Greeter.new
-a.invoked? :hi
+#a.invoked? :hi
 # => false
-b.invoked? :hi
+#b.invoked? :hi
 # => false
 a.hi
+#a.add_invocations :hi
+a.count_invocations_of :hi
 # Imprime "Hey!"
 a.invoked :hi
 # => 1
 b.invoked :hi
 # => 0
+a.add_invocations :hi
+a.count_invocations_of :hi
