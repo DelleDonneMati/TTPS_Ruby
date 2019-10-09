@@ -28,4 +28,4 @@ class Test < GenericFactory
 
 end
 
-a = Test.new
+a = Test.new(54)

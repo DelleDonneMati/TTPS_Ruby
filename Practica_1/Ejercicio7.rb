@@ -18,7 +18,8 @@ def valor_ASCII string
 end
 
 def vocales_Numeros string
-	puts string.gsub!(/a+/,'4').gsub!(/e+/,'3').gsub!(/i+/,'1').gsub!(/o+/,'0').gsub!(/u+/,'6')
+	p string.gsub(/a+/,'4').gsub(/e+/,'3').gsub(/i+/,'1').gsub(/o+/,'0').gsub(/u+/,'6').gsub(/A+/,'4').gsub(/E+/,'3').gsub(/I+/,'1').gsub(/O+/,'0').gsub(/U+/,'6')
+
 end
 
 
